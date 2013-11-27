@@ -1,9 +1,9 @@
 class TicketMailer < ActionMailer::Base
   default from: "from@example.com"
 
-  def weekly
+  def new_ticket
     @greeting = "Hi"
 
-    mail to: email, subject: "RailsCasts Weekly"
+    mail to: email, subject: "New Ticket"
   end
 end
